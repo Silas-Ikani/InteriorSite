@@ -1,0 +1,145 @@
+body {
+    background-color: #f0f0f0;
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+} */
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+.active {
+    color: #c89970;
+}
+
+.nav-link {
+    color: #fff;
+    margin-left: 1.2rem;
+    font-weight: 500;
+    position: relative;
+}
+.nav-link:hover {
+  color: #c89970;
+}
+.nav-link::after {
+  content: '';
+  width: 0;
+  height: 4px;
+  background: #c89970;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+.font-color {
+ color: #c89970; 
+}
+
+
+
+.hero-section {
+    background-image: url(../Img/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    height: 90vh;
+
+    /* filter */
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 768px) {
+    .hero-section {
+        /* justify-content: center;
+        align-items: center; */
+        text-align: center;
+    }
+}
+
+.btn-king {
+    background-color: #c89970;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.5s ease;
+}
+.btn-king:hover {
+    background-color: #fff;
+    color: #c89970;
+}
+
+
+/* Services section */
+.services {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.services h2 {
+    font-weight: 500;
+}
+
+.underline {
+    display: block;
+    margin-top: 8px;
+    margin-left: 0;
+    width: 60px;
+    height: 4px;
+    background: #c89970;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.services .service-box {
+    padding: 30px 20px;
+    border-radius: 12px;
+    background-color: #f8f9fa;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services .service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.service-box .icon-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  width: 70px;
+  height: 70px;
+  border: 1px solid;
+  clip-path: polygon(
+    50% 0%, 
+    93% 25%, 
+    93% 75%, 
+    50% 100%, 
+    7% 75%, 
+    7% 25%
+  );
+  background: #c89970;
+  color: #fff;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
