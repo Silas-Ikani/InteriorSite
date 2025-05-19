@@ -175,6 +175,9 @@
   animation-iteration-count: var(--fa-animation-iteration-count, infinite);
   animation-timing-function: var(--fa-animation-timing, ease-in-out); }
 
+.fa-flip:hover {
+  animation-play-state: paused; }
+
 .fa-shake {
   animation-name: fa-shake;
   animation-delay: var(--fa-animation-delay, 0s);

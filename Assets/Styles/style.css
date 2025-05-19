@@ -5,12 +5,20 @@ body {
     scroll-behavior: smooth;
 }
 
-/* .whatsapp-float {
+.whatsapp-float {
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 999;
-} */
+}
 
 .logo {
     width: 100px;
@@ -175,4 +183,49 @@ body {
     padding: 10px 22px;
     font-weight: 600;
     font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* onScroll effects/animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.zoom {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.6s ease;
+}
+
+.zoom.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+.contact {
+    background-image: url(../Img/contact-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+
+    /* filter */
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.7);
 }
