@@ -2,6 +2,7 @@ body {
     background-color: #f0f0f0;
     font-family: 'poppins', sans-serif;
     margin: 0;
+    padding: 0;
     scroll-behavior: smooth;
 }
 
@@ -20,7 +21,6 @@ body {
     z-index: 999;
 }
 
-
 .logo {
     width: 100px;
     height: auto;
@@ -36,23 +36,23 @@ body {
     position: relative;
 }
 .nav-link:hover {
-  color: #c89970;
+    color: #c89970;
 }
 .nav-link::after {
-  content: '';
-  width: 0;
-  height: 4px;
-  background: #c89970;
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  transition: 0.5s;
+    content: '';
+    width: 0;
+    height: 4px;
+    background: #c89970;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
 }
 .nav-link:hover::after {
-  width: 100%;
+    width: 100%;
 }
 .font-color {
- color: #c89970; 
+    color: #c89970; 
 }
 
 
